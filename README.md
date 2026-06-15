@@ -6,6 +6,29 @@ Also, includes a **custome module** that extends the contacts model (`res.partne
 
 ---
 
+## ⚙️ VPS Configuration
+
+### 1. Update system packages and linux user
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo adduser carlosq
+sudo usermod -aG sudo carlosq
+```
+### 1. Install git
+```bash
+sudo apt install curl git vim -y
+```
+### 1. Install and config docker
+```bash
+sudo apt install docker.io -y
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker carlos
+sudo apt install docker-compose -y
+```
+
+---
+
 ## 🚀 Prerequisites
 - VPS with Ubuntu/Debian updated
 - Docker y Docker Compose installed
@@ -16,7 +39,7 @@ Also, includes a **custome module** that extends the contacts model (`res.partne
 ## 📂 Project structure
 
 odoo_project/
-
+```text
 ├── docker-compose.yml
 ├── README.md
 ├── config/
@@ -30,7 +53,7 @@ odoo_project/
 │       └── views/
 │           └── partner_view.xml
 └── docs/
-
+```
 # Launch services once the Project has been cloned.
 Create root path: proyecto_odoo/
 
