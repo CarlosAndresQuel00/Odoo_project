@@ -53,11 +53,14 @@ odoo_project/
 └── docs/
 ```
 # Launch services once the Project has been cloned.
-Create root path: proyecto_odoo/
+**Create root path:**
+- *proyecto_odoo/*
 
-**On the path run:**
+**On the path execute:**
+```bash
 docker-compose up
+```
 
-Login User Odoo:
-Email: admin
-Password: admin1234
+**Login User Odoo:**
+- Email: admin
+- Password: admin1234
