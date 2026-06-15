@@ -6,6 +6,13 @@ Also, includes a **custome module** that extends the contacts model (`res.partne
 
 ---
 
+## 🚀 Prerequisites
+- VPS with Ubuntu/Debian updated
+- Docker y Docker Compose installed
+- Git configured
+
+---
+
 ## ⚙️ VPS Configuration
 
 ### 1. Update system packages and linux user
@@ -26,15 +33,6 @@ sudo systemctl start docker
 sudo usermod -aG docker carlos
 sudo apt install docker-compose -y
 ```
-
----
-
-## 🚀 Prerequisites
-- VPS with Ubuntu/Debian updated
-- Docker y Docker Compose installed
-- Git configured
-
----
 
 ## 📂 Project structure
 
